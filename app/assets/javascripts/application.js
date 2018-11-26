@@ -13,7 +13,13 @@
 //= require jquery3
 //= require popper
 //= require bootstrap
+//= require jquery.slick
+//= require jquery-ui
+//= require owl.carousel
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+$('document').ready(function(){
+	$(".owl-carousel").owlCarousel();
+})

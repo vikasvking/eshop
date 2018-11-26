@@ -7,7 +7,7 @@
 
             <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
               <form action="" class="site-block-top-search">
-                <span class="icon icon-search2"></span>
+                <i class="fa fa-search"  aria-hidden="true"></i>
                 <input type="text" class="form-control border-0" placeholder="Search">
               </form>
             </div>
@@ -21,7 +21,7 @@
             <div class="col-6 col-md-4 order-3 order-md-3 text-right">
               <div class="site-top-icons">
                 <ul>
-                  <li><a href="#"><span class="icon icon-person"></span></a></li>
+                  <li><a href="#"><i class="fa fa-user"></i></a></li>
                   <li><a href="#"><span class="icon icon-heart-o"></span></a></li>
                   <li>
                     <a href="cart.html" class="site-cart">
@@ -73,7 +73,7 @@
       </nav>
     </header>
 
-    <div class="site-blocks-cover" style="background-image: url(images/hero_1.jpg);" data-aos="fade">
+    <div class="site-blocks-cover">
       <div class="container">
         <div class="row align-items-start align-items-md-center justify-content-end">
           <div class="col-md-5 text-center text-md-left pt-5 pt-md-0">
@@ -92,7 +92,7 @@
     <div class="site-section site-section-sm site-blocks-1">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="">
+          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" >
             <div class="icon mr-4 align-self-start">
               <span class="icon-truck"></span>
             </div>
@@ -101,7 +101,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" >
             <div class="icon mr-4 align-self-start">
               <span class="icon-refresh2"></span>
             </div>
@@ -110,7 +110,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at iaculis quam. Integer accumsan tincidunt fringilla.</p>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-md-6 col-lg-4 d-lg-flex mb-4 mb-lg-0 pl-4" >
             <div class="icon mr-4 align-self-start">
               <span class="icon-help"></span>
             </div>
@@ -126,10 +126,10 @@
     <div class="site-section site-blocks-2">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" >
             <a class="block-2-item" href="#">
               <figure class="image">
-                <img src="images/women.jpg" alt="" class="img-fluid">
+                <%= image_tag "women.jpg",class: 'img-fluid' %>
               </figure>
               <div class="text">
                 <span class="text-uppercase">Collections</span>
@@ -137,10 +137,11 @@
               </div>
             </a>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" >
             <a class="block-2-item" href="#">
               <figure class="image">
-                <img src="images/children.jpg" alt="" class="img-fluid">
+              	<%= image_tag "children.jpg",class: 'img-fluid' %>
+               
               </figure>
               <div class="text">
                 <span class="text-uppercase">Collections</span>
@@ -148,10 +149,10 @@
               </div>
             </a>
           </div>
-          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" >
             <a class="block-2-item" href="#">
               <figure class="image">
-                <img src="images/men.jpg" alt="" class="img-fluid">
+                <%= image_tag "men.jpg",class: 'img-fluid' %>
               </figure>
               <div class="text">
                 <span class="text-uppercase">Collections</span>
@@ -176,7 +177,7 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="images/cloth_1.jpg" alt="Image placeholder" class="img-fluid">
+                    <%= image_tag "cloth_1.jpg",class: 'img-fluid' %>
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Tank Top</a></h3>
@@ -188,7 +189,8 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
+                  	<%= image_tag "shoe_1.jpg",class: 'img-fluid' %>
+                    
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Corater</a></h3>
@@ -200,7 +202,8 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="images/cloth_2.jpg" alt="Image placeholder" class="img-fluid">
+                  	<%= image_tag "cloth_2.jpg",class: 'img-fluid' %>
+                    
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Polo Shirt</a></h3>
@@ -212,7 +215,8 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="images/cloth_3.jpg" alt="Image placeholder" class="img-fluid">
+                  	<%= image_tag "cloth_3.jpg",class: 'img-fluid' %>
+                    
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">T-Shirt Mockup</a></h3>
@@ -224,7 +228,8 @@
               <div class="item">
                 <div class="block-4 text-center">
                   <figure class="block-4-image">
-                    <img src="images/shoe_1.jpg" alt="Image placeholder" class="img-fluid">
+                  	<%= image_tag "shoe_1.jpg",class: 'img-fluid' %>
+                    
                   </figure>
                   <div class="block-4-text p-4">
                     <h3><a href="#">Corater</a></h3>
@@ -248,7 +253,7 @@
         </div>
         <div class="row align-items-center">
           <div class="col-md-12 col-lg-7 mb-5">
-            <a href="#"><img src="images/blog_1.jpg" alt="Image placeholder" class="img-fluid rounded"></a>
+            <a href="#"><%= image_tag "blog_1.jpg", :alt=>"Image placeholder" ,:class=>"img-fluid rounded"%></a>
           </div>
           <div class="col-md-12 col-lg-5 text-center pl-md-5">
             <h2><a href="#">50% less in all items</a></h2>
@@ -295,7 +300,8 @@
           <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
             <h3 class="footer-heading mb-4">Promo</h3>
             <a href="#" class="block-6">
-              <img src="images/hero_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
+            	<%= image_tag "hero_1.jpg",class: 'img-fluid rounded mb-4',:alt=>"Image placeholder" %>
+              
               <h3 class="font-weight-light  mb-0">Finding Your Perfect Shoes</h3>
               <p>Promo from  nuary 15 &mdash; 25, 2019</p>
             </a>
@@ -323,11 +329,7 @@
         </div>
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
+            
           </div>
           
         </div>
@@ -335,14 +337,5 @@
     </footer>
   </div>
 
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
 
-  <script src="js/main.js"></script>
-    
  

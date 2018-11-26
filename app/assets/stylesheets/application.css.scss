@@ -10,7 +10,16 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require owl.carousel
+ *= require jquery-ui
+ *= require owl.theme
  *= require_tree .
  *= require_self
  */
 @import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import 'slick';
+.site-blocks-cover{
+	background: image-url('hero_1.jpg');
+}
