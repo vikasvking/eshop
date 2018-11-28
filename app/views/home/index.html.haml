@@ -1,0 +1,238 @@
+%body
+  .site-wrap
+    %header.site-navbar{:role => "banner"}
+      .site-navbar-top
+        .container
+          .row.align-items-center
+            .col-6.col-md-4.order-2.order-md-1.site-search-icon.text-left
+              %form.site-block-top-search{:action => ""}
+                %span.fa.fa-search{"aria-hidden" => "true"}
+                %input.form-control.border-0{:placeholder => "Search", :type => "text"}/
+            .col-12.mb-3.mb-md-0.col-md-4.order-1.order-md-2.text-center
+              .site-logo
+                %a.js-logo-clone{:href => "index.html"} Precast Structures
+            .col-6.col-md-4.order-3.order-md-3.text-right
+              .site-top-icons
+                %ul
+                  %li
+                    %a{:href => "#"}
+                      %i.fa.fa-user
+                  %li
+                    %a{:href => "#"}
+                      %span.icon.icon-heart-o
+                  %li
+                    %a.site-cart{:href => "cart.html"}
+                      %span.fa.fa-shopping-cart
+                      %span.count 2
+                  %li.d-inline-block.d-md-none.ml-md-0
+                    %a.site-menu-toggle.js-menu-toggle{:href => "#"}
+                      %span.icon-menu
+      %nav.site-navigation.text-right.text-md-center{:role => "navigation"}
+        .container
+          %ul.site-menu.js-clone-nav.d-none.d-md-block
+            %li.has-children.active
+              %a{:href => "index.html"} Home
+              %ul.dropdown
+                %li
+                  %a{:href => "#"} Menu One
+                %li
+                  %a{:href => "#"} Menu Two
+                %li
+                  %a{:href => "#"} Menu Three
+                %li.has-children
+                  %a{:href => "#"} Sub Menu
+                  %ul.dropdown
+                    %li
+                      %a{:href => "#"} Menu One
+                    %li
+                      %a{:href => "#"} Menu Two
+                    %li
+                      %a{:href => "#"} Menu Three
+            %li.has-children
+              %a{:href => "about.html"} About
+              %ul.dropdown
+                %li
+                  %a{:href => "#"} Menu One
+                %li
+                  %a{:href => "#"} Menu Two
+                %li
+                  %a{:href => "#"} Menu Three
+            %li
+              %a{:href => "shop.html"} Shop
+            %li
+              %a{:href => "#"} Catalogue
+            %li
+              %a{:href => "#"} New Arrivals
+            %li
+              %a{:href => "contact.html"} Contact
+    .site-blocks-cover
+      .container
+        .row.align-items-start.align-items-md-center.justify-content-end
+          .col-md-5.text-center.text-md-left.pt-5.pt-md-0
+            %h1.mb-2 Precast structure
+            .intro-text.text-center.text-md-left
+              %p.mb-4 Find variety of precast structures. Order at your door step.
+              %p
+                %a.btn.btn-sm.btn-primary{:href => "#"} Shop Now
+    .site-section.site-section-sm.site-blocks-1
+      .container
+        .row
+          .col-md-6.col-lg-4.d-lg-flex.mb-4.mb-lg-0.pl-4
+            .icon.mr-4.align-self-start
+              %span.icon-truck
+            .text
+              %h2.text-uppercase Free Shipping
+              %p Free shipping on purchase of above Rs 5000.
+          .col-md-6.col-lg-4.d-lg-flex.mb-4.mb-lg-0.pl-4
+            .icon.mr-4.align-self-start
+              %span.icon-refresh2
+            .text
+              %h2.text-uppercase Free Returns
+              %p Easy and hassel free return.
+          .col-md-6.col-lg-4.d-lg-flex.mb-4.mb-lg-0.pl-4
+            .icon.mr-4.align-self-start
+              %span.icon-help
+            .text
+              %h2.text-uppercase Customer Support
+              %p All time support available on product.
+    .site-section.site-blocks-2
+      .container
+        .row
+          .col-sm-6.col-md-6.col-lg-4.mb-4.mb-lg-0
+            %a.block-2-item{:href => "#"}
+              %figure.image
+                = image_tag "7.jpg",class: 'img-fluid'
+              .text
+                %span.text-uppercase Collections
+                %h3 Gamla
+          .col-sm-6.col-md-6.col-lg-4.mb-5.mb-lg-0
+            %a.block-2-item{:href => "#"}
+              %figure.image
+                = image_tag "1.jpg",class: 'img-fluid'
+              .text
+                %span.text-uppercase Collections
+                %h3 Fencing Post
+          .col-sm-6.col-md-6.col-lg-4.mb-5.mb-lg-0
+            %a.block-2-item{:href => "#"}
+              %figure.image
+                = image_tag "3.jpg",class: 'img-fluid'
+              .text
+                %span.text-uppercase Collections
+                %h3 Chamber Cover
+    .site-section.block-3.site-blocks-2.bg-light
+      .container
+        .row.justify-content-center
+          .col-md-7.site-section-heading.text-center.pt-4
+            %h2 Featured Products
+        .row
+          .col-md-12
+            .nonloop-block-3.owl-carousel
+              .item
+                .block-4.text-center
+                  %figure.block-4-image
+                    = image_tag "2.jpg",class: 'img-fluid'
+                  .block-4-text.p-4
+                    %h3
+                      %a{:href => "#"} Cement Bench
+                    %p.mb-0 Perfect for community
+                    %p.text-primary.font-weight-bold Rs. 1000
+              .item
+                .block-4.text-center
+                  %figure.block-4-image
+                    = image_tag "5.jpg",class: 'img-fluid'
+                  .block-4-text.p-4
+                    %h3
+                      %a{:href => "#"} Chamber cover
+                    %p.mb-0 Make your work easy
+                    %p.text-primary.font-weight-bold Rs 800
+              .item
+                .block-4.text-center
+                  %figure.block-4-image
+                    = image_tag "7.jpg",class: 'img-fluid'
+                  .block-4-text.p-4
+                    %h3
+                      %a{:href => "#"} Gamla
+                    %p.mb-0 Finding perfect products
+                    %p.text-primary.font-weight-bold Rs 500
+              .item
+                .block-4.text-center
+                  %figure.block-4-image
+                    = image_tag "6.jpg",class: 'img-fluid'
+                  .block-4-text.p-4
+                    %h3
+                      %a{:href => "#"} Gamla
+                    %p.mb-0
+                    %p.text-primary.font-weight-bold Rs 500
+    /
+      <div class="site-section block-8">
+      <div class="container">
+      <div class="row justify-content-center  mb-5">
+      <div class="col-md-7 site-section-heading text-center pt-4">
+      <h2>Big Sale!</h2>
+      </div>
+      </div>
+      <div class="row align-items-center">
+      <div class="col-md-12 col-lg-7 mb-5">
+      
+      </div>
+      <div class="col-md-12 col-lg-5 text-center pl-md-5">
+      <h2><a href="#">50% less in all items</a></h2>
+      <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span class="block-8-sep">&bullet;</span> September 3, 2018</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam iste dolor accusantium facere corporis ipsum animi deleniti fugiat. Ex, veniam?</p>
+      <p><a href="#" class="btn btn-primary btn-sm">Shop Now</a></p>
+      </div>
+      </div>
+      </div>
+      </div>
+    %footer.site-footer.border-top
+      .container
+        .row
+          .col-lg-6.mb-5.mb-lg-0
+            .row
+              .col-md-12
+                %h3.footer-heading.mb-4 Navigations
+              .col-md-6.col-lg-4
+                %ul.list-unstyled
+                  %li
+                    %a{:href => "#"} Sell online
+                  %li
+                    %a{:href => "#"} Features
+                  %li
+                    %a{:href => "#"} Shopping cart
+                  %li
+                    %a{:href => "#"} Store builder
+              .col-md-6.col-lg-4
+                %ul.list-unstyled
+                  %li
+                    %a{:href => "#"} Mobile commerce
+                  %li
+                    %a{:href => "#"} Dropshipping
+                  %li
+                    %a{:href => "#"} Website development
+              .col-md-6.col-lg-4
+                %ul.list-unstyled
+                  %li
+                    %a{:href => "#"} Point of sale
+                  %li
+                    %a{:href => "#"} Hardware
+                  %li
+                    %a{:href => "#"} Software
+          .col-md-6.col-lg-3.mb-4.mb-lg-0
+            %h3.footer-heading.mb-4 Promo
+            %a.block-6{:href => "#"}
+          .col-md-6.col-lg-3
+            .block-5.mb-5
+              %h3.footer-heading.mb-4 Contact Info
+              %ul.list-unstyled
+                %li.address Ajay D sahu
+                %li.phone
+                  %a{:href => "tel://23923929210"}
+                %li.email ajay sahu
+            .block-7
+              %form{:action => "#", :method => "post"}
+                %label.footer-heading{:for => "email_subscribe"} Subscribe
+                .form-group
+                  %input#email_subscribe.form-control.py-4{:placeholder => "Email", :type => "text"}/
+                  %input.btn.btn-sm.btn-primary{:type => "submit", :value => "Send"}/
+        .row.pt-5.mt-5.text-center
+          .col-md-12
